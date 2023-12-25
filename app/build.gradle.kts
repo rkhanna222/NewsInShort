@@ -76,6 +76,13 @@ dependencies {
     debugImplementation(Dependencies.composeUiTestManifest)
 
     implementation(project(Dependencies.Modules.utilities))
+    implementation(Dependencies.hiltNavigationCompose)
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.okhttp)
+    implementation(Dependencies.gsonConverter)
+    implementation(Dependencies.moshiConverter)
+    implementation(Dependencies.moshi)
+    implementation(Dependencies.logginginterceptor)
 
 
 }
