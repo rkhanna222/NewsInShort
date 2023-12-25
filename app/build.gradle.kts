@@ -83,6 +83,8 @@ dependencies {
     implementation(Dependencies.moshiConverter)
     implementation(Dependencies.moshi)
     implementation(Dependencies.logginginterceptor)
+    implementation(Dependencies.coroutinesCore)
+    implementation(Dependencies.coroutinesAndroid)
 
 
 }

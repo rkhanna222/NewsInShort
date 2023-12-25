@@ -19,4 +19,6 @@ object Versions {
     const val moshiConverter  ="2.9.0"
     const val moshi  ="1.13.0"
     const val logginginterceptor  ="4.8.1"
+    const val coroutinesCore  ="1.7.3"
+    const val coroutinesAndroid  ="1.7.3"
 }

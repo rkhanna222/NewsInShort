@@ -2,6 +2,9 @@ package com.example.newsinshort.di
 
 import com.example.newsinshort.data.Appconstants
 import com.example.newsinshort.data.api.ApiService
+import com.example.newsinshort.data.datasource.NewsDataSource
+import com.example.newsinshort.data.datasource.NewsDataSourceImpl
+import com.example.newsinshort.ui.repository.NewsRepository
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -48,5 +51,19 @@ class AppModule {
     @Provides
     fun providesApiService(retrofit: Retrofit): ApiService{
         return retrofit.create(ApiService::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun providesNewsDataSource(apiService: ApiService):NewsDataSource{
+        return NewsDataSourceImpl(apiService)
+
+    }
+
+    @Provides
+    @Singleton
+
+    fun providesNewsRepository(newsDataSource: NewsDataSource) : NewsRepository{
+        return NewsRepository(newsDataSource)
     }
 }
