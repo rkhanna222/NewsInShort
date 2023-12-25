@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -59,7 +61,13 @@ dependencies {
     implementation(Dependencies.composeUiGraphics)
     implementation(Dependencies.composeUiToolingPreview)
     implementation(Dependencies.composeMaterial3)
-    implementation(Dependencies.navigationCompose)
+    //implementation(Dependencies.navigationCompose)
+    implementation(Dependencies.hiltAndroid)
+    implementation(Dependencies.hiltAndroidCompiler)
+    kapt(Dependencies.hiltAndroidCompiler)
+    kapt(Dependencies.hiltCompiler)
+
+
     testImplementation(Dependencies.JUnit4)
     androidTestImplementation(Dependencies.extTestJUnit)
     androidTestImplementation(Dependencies.espressoCore)
@@ -69,4 +77,10 @@ dependencies {
     debugImplementation(Dependencies.composeUiTestManifest)
 
     implementation(project(Dependencies.Modules.utilities))
+
+
+}
+
+kapt{
+    correctErrorTypes = true
 }

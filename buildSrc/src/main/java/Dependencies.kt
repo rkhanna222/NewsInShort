@@ -20,6 +20,10 @@ object Dependencies {
     val composeUiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest" }
     val lifecycleViewModelKtx by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleViewModelKtx}" }
 
+    val hiltAndroid by lazy { "com.google.dagger:hilt-android:${Versions.hiltAndroid}"}
+    val hiltAndroidCompiler by lazy {"com.google.dagger:hilt-compiler:${Versions.hiltAndroid}" }
+    val hiltCompiler by lazy {"androidx.hilt:hilt-compiler:${Versions.hiltCompiler}" }
+
 
 
     object Modules {
