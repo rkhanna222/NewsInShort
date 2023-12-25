@@ -10,6 +10,6 @@ object Versions {
     const val espressoCore  ="3.5.1"
     const val navigationCompose  ="1.1.5"
     const val lifecycleViewModelKtx  ="2.6.1"
-    const val hiltAndroid  ="2.44"
-    const val hiltCompiler  ="1.1.0"
+    const val hiltAndroid  ="2.48"
+    const val hiltCompiler  ="1.1.0-alpha01"
 }

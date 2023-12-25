@@ -63,7 +63,6 @@ dependencies {
     implementation(Dependencies.composeMaterial3)
     //implementation(Dependencies.navigationCompose)
     implementation(Dependencies.hiltAndroid)
-    implementation(Dependencies.hiltAndroidCompiler)
     kapt(Dependencies.hiltAndroidCompiler)
     kapt(Dependencies.hiltCompiler)
 
