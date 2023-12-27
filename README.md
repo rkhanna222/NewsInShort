@@ -1,4 +1,4 @@
-# NewsInShort: Android App Development Mastery
+# NewsInShort: Android App
 
 ## Overview
 "NewsInShort" is an innovative Android application designed with Jetpack Compose, focusing on delivering news content in a concise and engaging format. The project leverages modern development practices and technologies to create a seamless user experience.
