@@ -85,6 +85,8 @@ dependencies {
     implementation(Dependencies.logginginterceptor)
     implementation(Dependencies.coroutinesCore)
     implementation(Dependencies.coroutinesAndroid)
+    implementation(Dependencies.splashscreen)
+    implementation(Dependencies.coil)
 
 
 }

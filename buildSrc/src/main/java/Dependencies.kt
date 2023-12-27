@@ -34,6 +34,8 @@ object Dependencies {
     val logginginterceptor by lazy { "com.squareup.okhttp3:logging-interceptor:${Versions.logginginterceptor}" } //:4.12.0
     val coroutinesCore by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutinesCore}" } //1.7.3
     val coroutinesAndroid by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutinesAndroid}" } //1.7.3
+    val splashscreen by lazy { "androidx.core:core-splashscreen:${Versions.splashscreen}" } //1.1.0-alpha02:
+    val coil by lazy { "io.coil-kt:coil-compose:${Versions.coil}" } //2.5.0
 
 
 

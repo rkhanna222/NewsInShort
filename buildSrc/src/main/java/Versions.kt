@@ -21,4 +21,6 @@ object Versions {
     const val logginginterceptor  ="4.8.1"
     const val coroutinesCore  ="1.7.3"
     const val coroutinesAndroid  ="1.7.3"
+    const val splashscreen  ="1.1.0-alpha02"
+    const val coil  ="2.5.0"
 }
